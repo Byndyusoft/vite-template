@@ -36,9 +36,13 @@ CRA поддерижвает импорт svg в модулях из короб�
    ```
 
 ### Тесты
-Jest поддерживается через плагин [vite-jest](https://github.com/sodatea/vite-jest), но с [оганичениями](https://github.com/sodatea/vite-jest/tree/main/packages/vite-jest#limitations-and-differences-with-commonjs-tests). 
+**Jest** поддерживается через плагин [vite-jest](https://github.com/sodatea/vite-jest), но с [оганичениями](https://github.com/sodatea/vite-jest/tree/main/packages/vite-jest#limitations-and-differences-with-commonjs-tests). 
 Например, плагин не работает на Windows 😹. И моки для ES-модулей хоть и работают, но находятся в экспериментальном режиме.
 
-С Vite лучше использовать [Vitest](https://vitest.dev/). API похоже на Jest, [гайд по миграции](https://vitest.dev/guide/migration.html) выглядит не сложно.
+С Vite лучше использовать **[Vitest](https://vitest.dev/)**. API похоже на Jest, [гайд по миграции](https://vitest.dev/guide/migration.html) выглядит не сложно. Есть [интеграция с популярными IDE](https://vitest.dev/guide/ide.html), веб-шторм поддерживает Vitest из коробки.
 
 Vitest работает с React Testing Library https://www.robinwieruch.de/vitest-react-testing-library/
+
+Есть интересные фичи типа [Vitest UI](https://vitest.dev/guide/ui.html)
+
+[vitest ui](https://user-images.githubusercontent.com/11247099/171992267-5cae2fa0-b927-400a-8eb1-da776974cb61.png)
