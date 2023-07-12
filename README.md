@@ -45,4 +45,4 @@ Vitest работает с React Testing Library https://www.robinwieruch.de/vit
 
 Есть интересные фичи типа [Vitest UI](https://vitest.dev/guide/ui.html)
 
-[vitest ui](https://user-images.githubusercontent.com/11247099/171992267-5cae2fa0-b927-400a-8eb1-da776974cb61.png)
+![vitest ui](https://user-images.githubusercontent.com/11247099/171992267-5cae2fa0-b927-400a-8eb1-da776974cb61.png)
