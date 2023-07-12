@@ -28,11 +28,11 @@ CRA поддерижвает импорт svg в модулях из короб�
 1. `npm install vite-svg-loader --save-dev`
 2. vite.config.js
    ```javascript
-     import svgLoader from 'vite-svg-loader'
-    
-      export default defineConfig({
-        plugins: [vue(), svgLoader()]
-      })
+   import svgLoader from 'vite-svg-loader'
+ 
+   export default defineConfig({
+     plugins: [vue(), svgLoader()]
+   })
    ```
 
 
