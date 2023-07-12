@@ -1,10 +1,13 @@
 # Альтернатива для [cra-template](https://github.com/Byndyusoft/cra-template)
 
-[Vite](https://vitest.dev/)
+[Официальная документация](https://vitest.dev/)
 
-1. Install Vite
-2. Run `npm i eslint @byndyusoft/eslint-config --save-dev`
-3. Сделать файл `.eslintrc` с сетапом
+Установка из пресетов https://vitejs.dev/guide/
+
+### Eslint 
+Дефолтный конфиг:
+1. Выполнить `npm i eslint @byndyusoft/eslint-config --save-dev`
+2. Сделать файл `.eslintrc` с сетапом
     ```
     {
         "extends": [
@@ -12,5 +15,24 @@
         ]
     }
     ```
-4. Выполнить `npx --yes storybook init`
+
+### Storybook
+Поддерживает vite из коробки:
+
+`npx --yes storybook init`
+
+### SVG
+
+CRA поддерижвает импорт svg в модулях из коробки. Для Vite можно добавить плагин https://www.npmjs.com/package/vite-svg-loader, поддерживает SVGO
+
+1. `npm install vite-svg-loader --save-dev`
+2. vite.config.js
+   ```javascript
+     import svgLoader from 'vite-svg-loader'
+    
+      export default defineConfig({
+        plugins: [vue(), svgLoader()]
+      })
+   ```
+
 
