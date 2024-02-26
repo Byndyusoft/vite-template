@@ -10,6 +10,10 @@ npm install
 npm run dev
 ```
 
+Для SVG используется [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr), в контексте реакта импорт выглядит так:
+```javascript
+import Logo from "./logo.svg?react";
+```
 ### TODO
 
 - [ ] Обновить зависимости у @byndyusoft/stylelint-config
