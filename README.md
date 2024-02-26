@@ -10,7 +10,9 @@ npm install
 npm run dev
 ```
 
+### TODO
 
+- [ ] Обновить зависимости у @byndyusoft/stylelint-config
 
 
 ## Поддержка
