@@ -7,6 +7,7 @@
 npx degit Byndyusoft/vite-template#main new-project-dir
 cd new-project-dir
 npm install
+npm run dev
 ```
 
 
