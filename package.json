@@ -18,7 +18,19 @@
     "stylelint:check": "stylelint src/**/*.scss",
     "stylelint:fix": "stylelint src/**/*.scss --fix",
     "prettier:check": "prettier --check \"src/**/*.{ts,tsx,scss}\"",
-    "prettier:fix": "prettier --check \"src/**/*.{ts,tsx,scss}\" --write"
+    "prettier:fix": "prettier --check \"src/**/*.{ts,tsx,scss}\" --write",
+    "prepare": "(husky init) || true"
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js,jsx}": [
+      "npm run eslint:check",
+      "npm run prettier:check"
+    ],
+    "**/*.{css,scss}": [
+      "npm run stylelint:check",
+      "npm run prettier:check"
+    ],
+    "**/*.{test,tests}.{ts,tsx,js,jsx}": "vitest run"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -46,6 +58,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.2.5",
     "storybook": "^7.6.17",
     "stylelint": "13.0.0",
