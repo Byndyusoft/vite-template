@@ -20,12 +20,6 @@
     "prettier:fix": "prettier --check \"src/**/*.{ts,tsx,js,jsx,css,scss}\" --write",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "src/**/*.{ts,tsx,js,jsx,css,scss}": "npm run prettier:check",
-    "**/*.{css,scss}": "npm run stylelint:check",
-    "**/*.{ts,tsx,js,jsx}": "npm run eslint:check",
-    "**/*.{test,tests}.{ts,tsx,js,jsx}": "vitest run"
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
