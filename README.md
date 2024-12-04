@@ -16,8 +16,21 @@ import Logo from "./logo.svg?react";
 ```
 ### TODO
 
-- [ ] Обновить зависимости у @byndyusoft/stylelint-config
-
+Обновить зависимости:
+- [x] @byndyusoft/stylelint-config
+- [ ] storybook
+- [ ] @storybook/addon-essentials
+- [ ] @storybook/addon-interactions
+- [ ] @storybook/addon-links
+- [ ] @storybook/addon-onboarding
+- [ ] @storybook/blocks
+- [ ] @storybook/react
+- [ ] @storybook/react-vite
+- [ ] @storybook/test
+- [ ] eslint ?
+- [ ] prettier ?
+- [ ] typescript ?
+- [ ] vite ?
 
 ## Поддержка
 
