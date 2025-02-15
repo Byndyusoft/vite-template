@@ -1,0 +1,5 @@
+{
+    "src/**/*.{ts,tsx,js,jsx}": ["eslint", "prettier --check"],
+    "src/**/*.{css,scss}": ["stylelint", "prettier --check"],
+    "**/*.{test,tests}.{ts,tsx,js,jsx}": "vitest run"
+}
