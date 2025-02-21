@@ -22,15 +22,15 @@ import Logo from './logo.svg?react';
 Обновить зависимости:
 
 -   [x] @byndyusoft/stylelint-config
--   [ ] storybook
--   [ ] @storybook/addon-essentials
--   [ ] @storybook/addon-interactions
--   [ ] @storybook/addon-links
--   [ ] @storybook/addon-onboarding
--   [ ] @storybook/blocks
--   [ ] @storybook/react
--   [ ] @storybook/react-vite
--   [ ] @storybook/test
+-   [x] storybook
+-   [x] @storybook/addon-essentials
+-   [x] @storybook/addon-interactions
+-   [x] @storybook/addon-links
+-   [x] @storybook/addon-onboarding
+-   [x] @storybook/blocks
+-   [x] @storybook/react
+-   [x] @storybook/react-vite
+-   [x] @storybook/test
 -   [ ] eslint ?
 -   [ ] prettier ?
 -   [ ] typescript ?
