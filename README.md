@@ -21,21 +21,21 @@ import Logo from './logo.svg?react';
 
 Обновить зависимости:
 
--   [x] @byndyusoft/stylelint-config
--   [x] storybook
--   [x] @storybook/addon-essentials
--   [x] @storybook/addon-interactions
--   [x] @storybook/addon-links
--   [x] @storybook/addon-onboarding
--   [x] @storybook/blocks
--   [x] @storybook/react
--   [x] @storybook/react-vite
--   [x] @storybook/test
--   [ ] eslint ?
--   [ ] prettier ?
--   [ ] typescript ?
--   [ ] vite ?
+- [x] @byndyusoft/stylelint-config
+- [x] storybook
+- [x] @storybook/addon-essentials
+- [x] @storybook/addon-interactions
+- [x] @storybook/addon-links
+- [x] @storybook/addon-onboarding
+- [x] @storybook/blocks
+- [x] @storybook/react
+- [x] @storybook/react-vite
+- [x] @storybook/test
+- [ ] eslint ?
+- [ ] prettier ?
+- [ ] typescript ?
+- [ ] vite ?
 
 ## Поддержка
 
--   [@byndyusoft/frontend](https://github.com/orgs/Byndyusoft/teams/frontend) - [frontend@byndyusoft.com](mailto:frontend@byndyusoft.com)
+- [@byndyusoft/frontend](https://github.com/orgs/Byndyusoft/teams/frontend) - [frontend@byndyusoft.com](mailto:frontend@byndyusoft.com)
