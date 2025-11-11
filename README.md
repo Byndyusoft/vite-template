@@ -41,23 +41,4 @@ npm run dev
 - `npm run prettier:check` / `npm run prettier:fix` — проверка/форматирование Prettier
 - `npm run prepare` — установка Git‑хуков (Husky)
 
-## TODO шаблона
-
-Обновить зависимости:
-
-- [x] @byndyusoft/stylelint-config
-- [x] storybook
-- [x] @storybook/addon-essentials
-- [x] @storybook/addon-interactions
-- [x] @storybook/addon-links
-- [x] @storybook/addon-onboarding
-- [x] @storybook/blocks
-- [x] @storybook/react
-- [x] @storybook/react-vite
-- [x] @storybook/test
-- [ ] eslint ?
-- [ ] prettier ?
-- [ ] typescript ?
-- [ ] vite ?
-
 ## [Поддержка](./SUPPORT.md)
