@@ -6,7 +6,7 @@
 
 - Команда фронтенда [@byndyusoft/frontend](https://github.com/orgs/Byndyusoft/teams/frontend) — [frontend@byndyusoft.com](mailto:frontend@byndyusoft.com)
 - Создайте Issue в репозитории
-  - [Как сообщить об уязвимости в безопасности](./SECURITY.md#сообщение-об-уязвимости)
+    - [Как сообщить об уязвимости в безопасности](./SECURITY.md#сообщение-об-уязвимости)
 
 ## Перед тем как писать
 
