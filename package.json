@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:analyze": "ANALYZE=true --config vite.config.ts tsc && vite build",
+    "build:analyze": "ANALYZE=true --config vite.config.ts npm run build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -19,6 +19,7 @@
     "stylelint:fix": "stylelint src/**/*.{scss,css} --fix",
     "prettier:check": "prettier --check \"**/**\"",
     "prettier:fix": "prettier --check \"**/**\" --write",
+    "license:report": "npx license-report --only=prod --fields=name --fields=licenseType --fields=link --fields=installedVersion --fields=author --output=html > public/licenses/third-party-licenses.html",
     "prepare": "husky"
   },
   "dependencies": {
@@ -50,6 +51,7 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.11.3",
     "husky": "^9.1.7",
+    "license-report": "^6.8.1",
     "lint-staged": "^15.2.10",
     "prettier": "^3.2.5",
     "storybook": "^8.5.8",
