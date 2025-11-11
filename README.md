@@ -1,6 +1,7 @@
 # Vite React Template
 
-Готовый к работе шаблон фронтенд‑приложения на React + TypeScript + Vite, с преднастроенными линтерами, форматерами, тестами, Storybook и полезными скриптами.
+Описание проекта: готовый к работе шаблон фронтенд‑приложения на React + TypeScript + Vite, с преднастроенными линтерами, форматерами, тестами, Storybook и полезными скриптами.
+// TODO: заменить актуальное описание вашего проекта
 
 - **Стек**: React 19, TypeScript 5, Vite 7, Vitest 4, Storybook 10, ESLint 9, Stylelint 16, Prettier 3
 - **Node.js**: 18 LTS и выше
@@ -13,13 +14,22 @@
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — архитектура, структура проекта, алиасы
 - [AI_GUIDE.md](./AI_GUIDE.md) — инструкции для ИИ‑агентов по работе с репозиторием
 
-## Быстрый старт
+## Быстрый старт шаблона
+
+// TODO: убрать этот раздел после создания проекта из шаблона
 
 Создать новый проект из шаблона через [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
 npx degit Byndyusoft/vite-template#main new-project
 cd new-project
+npm install
+npm run dev
+```
+
+## Быстрый старт проекта
+
+```bash
 npm install
 npm run dev
 ```
