@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 
 import js from '@eslint/js';
 import globals from 'globals';
+import prettierConfig from 'eslint-config-prettier';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import reactRefreshPlugin from 'eslint-plugin-react-refresh';
@@ -17,26 +18,27 @@ export default tseslint.config(
     },
     js.configs.recommended,
     ...tseslint.configs.recommendedTypeChecked,
+    reactPlugin.configs.flat.recommended,
+    reactPlugin.configs.flat['jsx-runtime'],
+    reactHooksPlugin.configs.flat['recommended-latest'],
+    storybookPlugin.configs['flat/recommended'],
+    prettierConfig,
+    {
+        languageOptions: {
+            globals: globals.browser
+        }
+    },
     {
         files: ['**/*.{ts,tsx}'],
         languageOptions: {
             parserOptions: {
+                ecmaVersion: 'latest',
+                sourceType: 'module',
                 project: ['./tsconfig.json', './tsconfig.node.json'],
                 tsconfigRootDir
             }
         }
     },
-    {
-        languageOptions: {
-            globals: {
-                ...globals.browser
-            }
-        }
-    },
-    reactPlugin.configs.flat.recommended,
-    reactPlugin.configs.flat['jsx-runtime'],
-    reactHooksPlugin.configs.flat['recommended-latest'],
-    storybookPlugin.configs['flat/recommended'],
     {
         files: ['**/*.{ts,tsx,js,jsx}'],
         plugins: {
