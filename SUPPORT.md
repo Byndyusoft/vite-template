@@ -5,7 +5,7 @@
 ## Где спросить
 
 - Команда фронтенда [@byndyusoft/frontend](https://github.com/orgs/Byndyusoft/teams/frontend) — [frontend@byndyusoft.com](mailto:frontend@byndyusoft.com)
-// TODO: заменить на актуальные данные вашего проекта
+  // TODO: заменить на актуальные данные вашего проекта
 - Создайте Issue в репозитории
     - [Как сообщить об уязвимости в безопасности](./SECURITY.md#сообщение-об-уязвимости)
 

@@ -11,15 +11,9 @@
 ## Ограничения и договорённости
 
 - Поддерживаем Node.js 18+.
-- Следуем [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) и [ARCHITECTURE.md](./ARCHITECTURE.md).
+- Следуем [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) и [ARCHITECTURE.md](./ARCHITECTURE.md), и `recommendations/`, и `references/`.
+- Используем кубики (библиотеку ui-компонентов, хуков, стилей и всего остального), чтобы не дублировать код и не переизобретать велосипед. Ищи кубики [здесь](./src/[путь до компонентов]). // TODO: указать путь до компонентов
 - Все изменения должны соответствовать линтерам и проходить тесты.
-
-## Как принимать решения
-
-1. Отталкивайтесь от текущих скриптов из `package.json` (не выдумывайте несущ. команды).
-2. Сначала читайте `README.md`, `CODE_OF_CONDUCT.md`, `ARCHITECTURE.md`, затем исходники в `src/`.
-3. Предлагайте минимально достаточные изменения, избегайте бессмысленных крупных рефакторингов.
-4. Обязательно учитывайте версии зависимостей и их совместимость.
 
 ## Типичный рабочий процесс
 
@@ -27,10 +21,11 @@
     - `npm install`
     - `npm run dev`
 2. Качество:
+    - `npm run typescript:check`
     - `npm run eslint:check`
     - `npm run stylelint:check`
     - `npm run prettier:check`
-    - `npm run test` / `npm run test:coverage`
+    - `npm run test:check` / `npm run test:coverage`
 3. Сборка и анализ:
     - `npm run build`
     - `npm run build:analyze`
@@ -52,7 +47,3 @@
 - Неочевидные продуктовые решения, конфликтующие требования.
 - Изменения в процессах CI/CD, секреты/конфигурации окружений.
 - Сомнения в архитектурном выборе, влияющие на долгосрочное обслуживание.
-
----
-
-Полезно прочитать перед началом: [README.md](./README.md), [ARCHITECTURE.md](./ARCHITECTURE.md), [CONTRIBUTING.md](./CONTRIBUTING.md).

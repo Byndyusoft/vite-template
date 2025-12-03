@@ -12,17 +12,13 @@
 - [SECURITY.md](./SECURITY.md) — политика безопасности и сообщение об уязвимостях
 - [SUPPORT.md](./SUPPORT.md) — как получить помощь
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — архитектура, структура проекта, алиасы
-- [AI_GUIDE.md](./AI_GUIDE.md) — инструкции для ИИ‑агентов по работе с репозиторием
-
-## Быстрый старт шаблона
+- [AGENT.md](AGENT.md) — инструкции для ИИ‑агентов по работе с репозиторием
 
 // TODO: убрать этот раздел после создания проекта из шаблона
 
 Создать новый проект из шаблона через [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit Byndyusoft/vite-template#main new-project
-cd new-project
 npm install
 npm run dev
 ```
@@ -43,12 +39,33 @@ npm run dev
 - `npm run build:analyze` — сборка с анализом бандла (`vite-bundle-analyzer`)
 - `npm run storybook` — запуск Storybook
 - `npm run build-storybook` — сборка Storybook
-- `npm run test` — запуск тестов Vitest в CLI
+- `npm run test:check` — запуск тестов Vitest в CLI
+- `npm run test:watch` — запуск тестов Vitest в CLI с режимом слежения за изменениями
 - `npm run test:ui` — запуск Vitest UI
 - `npm run test:coverage` — запуск тестов с покрытием
 - `npm run eslint:check` / `npm run eslint:fix` — проверка/исправление ESLint
 - `npm run stylelint:check` / `npm run stylelint:fix` — проверка/исправление Stylelint
 - `npm run prettier:check` / `npm run prettier:fix` — проверка/форматирование Prettier
+- `npm run typescript:check` — проверка типизации TypeScript
 - `npm run prepare` — установка Git‑хуков (Husky)
+
+## Требования к совместимости проекта
+
+// TODO: заполнить согласно требованиям проекта
+
+1. Совместимость с браузерами
+    - Google chrome
+    - Firefox
+    - Safari
+
+2. Совместимость с устройствами
+    - PC
+    - Tablet
+    - Mobile
+
+3. Разрешение дисплея
+    - 1440px
+    - 640px
+    - 360px
 
 ## [Поддержка](./SUPPORT.md)
