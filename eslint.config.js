@@ -14,10 +14,16 @@ const tsconfigRootDir = dirname(fileURLToPath(import.meta.url));
 
 export default tseslint.config(
     {
-        ignores: ['dist', '.commitlintrc.cjs', 'vitest.config.ts', 'eslint.config.js']
+        ignores: [
+            'dist',
+            '.commitlintrc.cjs',
+            'vitest.config.ts',
+            'eslint.config.js',
+            'public/mockServiceWorker.js',
+            'storybook-static'
+        ]
     },
     js.configs.recommended,
-    ...tseslint.configs.recommendedTypeChecked,
     reactPlugin.configs.flat.recommended,
     reactPlugin.configs.flat['jsx-runtime'],
     reactHooksPlugin.configs.flat['recommended-latest'],
@@ -28,6 +34,10 @@ export default tseslint.config(
             globals: globals.browser
         }
     },
+    ...tseslint.configs.recommendedTypeChecked.map(config => ({
+        ...config,
+        files: ['**/*.{ts,tsx}']
+    })),
     {
         files: ['**/*.{ts,tsx}'],
         languageOptions: {
