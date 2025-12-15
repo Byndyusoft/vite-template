@@ -28,7 +28,6 @@ export default tseslint.config(
     reactPlugin.configs.flat['jsx-runtime'],
     reactHooksPlugin.configs.flat['recommended-latest'],
     storybookPlugin.configs['flat/recommended'],
-    prettierConfig,
     {
         languageOptions: {
             globals: globals.browser
@@ -62,5 +61,6 @@ export default tseslint.config(
         rules: {
             'react-refresh/only-export-components': ['warn', { allowConstantExport: true }]
         }
-    }
+    },
+    prettierConfig
 );
