@@ -16,7 +16,8 @@
 - [ ] Локально проходят линтеры (`eslint`, `stylelint`) и форматирование (`prettier`)
 - [ ] Пройдены тесты (`vitest`) и/или обновлено покрытие
 - [ ] Успешная сборка (`npm run build`)
-- [ ] Обновлена документация (при необходимости)
+- [ ] Обновлена документация (при необходимости; можно использовать skill `documentation-update`)
+- [ ] Выполнено авто-ревью AI-агентом (skill `review-pull-request`)
 - [ ] Изменения соответствуют [CODE_OF_CONDUCT.md](../CODE_OF_CONDUCT.md) и [ARCHITECTURE.md](../ARCHITECTURE.md)
 
 ## Связанные задачи/Issue
