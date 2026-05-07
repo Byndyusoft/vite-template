@@ -14,14 +14,7 @@ const tsconfigRootDir = dirname(fileURLToPath(import.meta.url));
 
 export default tseslint.config(
     {
-        ignores: [
-            'dist',
-            '.commitlintrc.cjs',
-            'vitest.config.ts',
-            'eslint.config.js',
-            'public/mockServiceWorker.js',
-            'storybook-static'
-        ]
+        ignores: ['dist', '.commitlintrc.cjs', 'eslint.config.js', 'public/mockServiceWorker.js', 'storybook-static']
     },
     js.configs.recommended,
     reactPlugin.configs.flat.recommended,

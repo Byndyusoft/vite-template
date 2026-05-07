@@ -4,7 +4,7 @@
 Описание проекта: готовый к работе шаблон фронтенд-приложения на React, TypeScript и Vite с преднастроенными линтерами, форматерами, тестами, Storybook и контекстом для AI-агентов.
 
 - **Стек**: React 19, TypeScript 5, Vite 7, Vitest 4, Storybook 10, ESLint 9, Stylelint 16, Prettier 3
-- **Node.js**: 18 LTS и выше
+- **Node.js**: 20.19+ или 22.12+ и выше
 
 Сопутствующие документы:
 
@@ -38,7 +38,7 @@ npm run dev
 
 - `npm run dev` — запуск dev-сервера Vite
 - `npm run build` — сборка проекта
-- `npm run build:analyze` — сборка с анализом бандла (`vite-bundle-analyzer`)
+- `npm run build:analyze` — сборка с анализом бандла в `dist/stats.html` (`vite-bundle-analyzer`)
 - `npm run storybook` — запуск Storybook
 - `npm run build-storybook` — сборка Storybook
 - `npm run test:check` — запуск тестов Vitest в CLI
