@@ -3,11 +3,18 @@ import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import analyzer from 'vite-bundle-analyzer';
 
-const analyzerPlugin = () => (process.env.ANALYZE !== 'true' ? analyzer({ analyzerPort: 'auto' }) : null);
-
 // https://vitejs.dev/config/
-export default defineConfig(() => {
+export default defineConfig(({ mode }) => {
     return {
-        plugins: [react(), svgr(), analyzerPlugin()].filter(Boolean)
+        plugins: [
+            react(),
+            svgr(),
+            analyzer({
+                analyzerMode: 'static',
+                enabled: mode === 'analyze',
+                fileName: 'stats',
+                openAnalyzer: false
+            })
+        ]
     };
 });
